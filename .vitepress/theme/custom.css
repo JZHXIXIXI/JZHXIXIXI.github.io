@@ -1,0 +1,27 @@
+:root {
+  /* 1. 改变网站的主题高亮色（变成酷炫的极光绿/青色） */
+  --vp-c-brand-1: #00dc82;
+  --vp-c-brand-2: #36e4da;
+  --vp-c-brand-3: #02b06c;
+  
+  /* 2. 改变纯文本的默认颜色，让它更清晰 */
+  --vp-c-text-1: #2c3e50;
+  
+  /* 3. 改变网页的整体文字字体（换成更好看、更大气的无衬线字体） */
+  --vp-font-family-base: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* 当切换到深色模式（Dark Mode）时，我们还可以让它更酷 */
+.dark {
+  /* 深色模式下的科技绿 */
+  --vp-c-brand-1: #00dc82;
+  /* 深色模式下的纯黑背景，更有黑客帝国的质感 */
+  --vp-c-bg: #0f141c;
+  --vp-c-bg-soft: #1e2530;
+}
+
+/* 还可以顺便给你的代码块加个圆角，看起来更精致 */
+.vp-doc div[class*="language-"] {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
