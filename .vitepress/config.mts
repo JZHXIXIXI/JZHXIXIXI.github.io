@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 import mathjax3 from 'markdown-it-mathjax3'
 
 export default defineConfig({
-  title: "我的学习日志",
+  title: "JZH的学习日志",
   description: "CTF | 嵌入式 | AI 技术沉淀",
   
   themeConfig: {
