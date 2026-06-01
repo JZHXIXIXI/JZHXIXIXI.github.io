@@ -2,32 +2,48 @@ import { defineConfig } from 'vitepress'
 import mathjax3 from 'markdown-it-mathjax3'
 
 export default defineConfig({
-  // 你的网站标题
   title: "我的学习日志",
-  description: "记录学习笔记的地方",
+  description: "CTF | 嵌入式 | AI 技术沉淀",
   
   themeConfig: {
-    // 网站右上角的导航栏链接
+    // 1. 顶部导航栏：可以一键切换大板块
     nav: [
       { text: '首页', link: '/' },
-      { text: '我的笔记', link: '/my-first-note' }
+      { text: 'CTF密码学', link: '/1' },
+      { text: '嵌入式开发', link: '/2' },
+      { text: 'AI与人工智能', link: '/3' }
     ],
-    // 左侧的菜单栏
+
+    // 2. 左侧侧边栏：让每个板块下面都可以无限细分小专题
     sidebar: [
       {
-        text: '密码学与数学',
+        text: '🚩 CTF 攻防防线',
+        collapsed: false, // 是否默认展开
         items: [
-          { text: '群论基础笔记', link: '/my-first-note' }
+          { text: '近世代数与群论基础', link: '/1' }
+        ]
+      },
+      {
+        text: '🤖 嵌入式与车载安全',
+        collapsed: false,
+        items: [
+          { text: '树莓派与 Linux 基础', link: '/2' }
+        ]
+      },
+      {
+        text: '🧠 AI 与大模型协议',
+        collapsed: false,
+        items: [
+          { text: 'ONNX 模型推理与部署', link: '/3' }
         ]
       }
     ],
-    // 社交链接
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com' }
     ]
   },
 
-  // 核心配置：激活数学公式渲染
   markdown: {
     config: (md) => {
       md.use(mathjax3)
