@@ -11,7 +11,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: 'CTF密码学', link: '/1' },
       { text: '嵌入式开发', link: '/2' },
-      { text: 'Agent学习笔记', link: '/3' }
+      { text: 'Agent学习笔记', link: '/ai/openclaw_src_cli' }
     ],
 
     // 2. 左侧侧边栏：让每个板块下面都可以无限细分小专题
