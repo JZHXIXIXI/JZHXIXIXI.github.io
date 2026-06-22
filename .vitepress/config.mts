@@ -61,6 +61,15 @@ export default defineConfig({
                 { text: '字符设备', link: '/embed' },
                 { text: '块设备', link: '/embed' }
               ]
+            },
+
+            {
+              text: '🔽 嵌入式八股文',
+              collapsed: false, // 展开里面的三级菜单
+              items: [
+                { text: '运算符', link: '/embed/运算符' },
+                { text: '关键字', link: '/embed/关键字' }
+              ]
             }
               ]
           }
