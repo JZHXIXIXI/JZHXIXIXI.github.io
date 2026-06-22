@@ -83,6 +83,14 @@ export default defineConfig({
               ]
             }
 
+            {
+              text: '🔽 论文笔记',
+              collapsed: false, // 展开里面的三级菜单
+              items: [
+                { text: '基于llm的智能体安全', link: '/ai/llm-Agent' },
+              ]
+            }
+
               ]
           }
 
