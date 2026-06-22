@@ -3,7 +3,7 @@ import mathjax3 from 'markdown-it-mathjax3'
 
 export default defineConfig({
   title: "JZH的学习日志",
-  description: "CTF | 嵌入式 | AI 技术沉淀",
+  description: "CTF | 嵌入式 | Agent学习笔记",
   
   themeConfig: {
     // 1. 顶部导航栏：可以一键切换大板块
@@ -11,7 +11,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: 'CTF密码学', link: '/1' },
       { text: '嵌入式开发', link: '/2' },
-      { text: 'AI与人工智能', link: '/3' }
+      { text: 'Agent学习笔记', link: '/3' }
     ],
 
     // 2. 左侧侧边栏：让每个板块下面都可以无限细分小专题
@@ -20,7 +20,7 @@ export default defineConfig({
         text: '🚩 CTF 攻防防线',
         collapsed: false, // 是否默认展开
         items: [
-          { text: '近世代数与群论基础', link: '/1' }
+          { text: 'CTF PWN', link: '/1' }
         ]
       },
       {
@@ -31,10 +31,10 @@ export default defineConfig({
         ]
       },
       {
-        text: '🧠 AI 与大模型协议',
+        text: '🧠 AI 与 Agent',
         collapsed: false,
         items: [
-          { text: 'ONNX 模型推理与部署', link: '/3' }
+          { text: 'Agent学习笔记', link: '/3' }
         ]
       }
     ],
