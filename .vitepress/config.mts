@@ -34,15 +34,22 @@ export default defineConfig({
         text: '🧠 AI 与 Agent',
         collapsed: false,
         items: [
-          { text: 'Agent学习笔记' },
-
           {
-            text: '🔽 openclaw', 
-            collapsed: false, // 这个子分组是否可以折叠
-            items: [
-              { text: 'src学习', link: '/ai/openclaw_src_cli' },
-              { text: 'LLM 增量微调实战', link: '/5' }
-            ]
+          text: '📁 Agent学习笔记',
+          collapsed: true, 
+          items: [
+            
+            // 🌟 2. 嵌套在里面的二级分组 “openclaw”
+            {
+              text: '🔽 openclaw',
+              collapsed: false, // 展开里面的三级菜单
+              items: [
+                { text: 'src学习', link: '/ai/openclaw_src_cli' },
+                { text: 'LLM 增量微调实战', link: '/5' }
+              ]
+            }
+
+              ]
           }
 
         ]
