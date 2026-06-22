@@ -9,25 +9,61 @@ export default defineConfig({
     // 1. 顶部导航栏：可以一键切换大板块
     nav: [
       { text: '首页', link: '/' },
-      { text: 'CTF密码学', link: '/1' },
-      { text: '嵌入式开发', link: '/2' },
-      { text: 'Agent学习笔记', link: '/ai/openclaw_src_cli' }
+      { text: 'CTF攻防学习笔记', link: '/ctf/introduce' },
+      { text: '嵌入式学习笔记', link: '/embed/introduce' },
+      { text: 'Agent学习笔记', link: '/ai/introduce' }
     ],
 
     // 2. 左侧侧边栏：让每个板块下面都可以无限细分小专题
     sidebar: [
       {
-        text: '🚩 CTF 攻防防线',
+        text: '🚩 CTF攻防之路',
         collapsed: false, // 是否默认展开
         items: [
-          { text: 'CTF PWN', link: '/1' }
+          {
+          text: '📁 PWN学习笔记',
+          collapsed: true, 
+          items: [
+            {
+              text: '🔽 题解',
+              collapsed: false, // 展开里面的三级菜单
+              items: [
+                { text: '题解1', link: '/ctf/' },
+                { text: '题解2', link: '/ctf/' }
+              ]
+            }
+
+              ]
+          }
         ]
       },
       {
-        text: '🤖 嵌入式与车载安全',
+        text: '🤖 嵌入式学习笔记',
         collapsed: false,
         items: [
-          { text: '树莓派与 Linux 基础', link: '/2' }
+          {
+          text: '📁 嵌入式学习笔记',
+          collapsed: true, 
+          items: [
+            {
+              text: '🔽 Stm32',
+              collapsed: false, // 展开里面的三级菜单
+              items: [
+                { text: 'GPIO', link: '/embed' },
+                { text: '通信协议', link: '/embed' }
+              ]
+            },
+
+            {
+              text: '🔽 Linux',
+              collapsed: false, // 展开里面的三级菜单
+              items: [
+                { text: '字符设备', link: '/embed' },
+                { text: '块设备', link: '/embed' }
+              ]
+            }
+              ]
+          }
         ]
       },
       {
@@ -38,14 +74,12 @@ export default defineConfig({
           text: '📁 Agent学习笔记',
           collapsed: true, 
           items: [
-            
-            // 🌟 2. 嵌套在里面的二级分组 “openclaw”
             {
               text: '🔽 openclaw',
               collapsed: false, // 展开里面的三级菜单
               items: [
                 { text: 'src学习', link: '/ai/openclaw_src_cli' },
-                { text: 'LLM 增量微调实战', link: '/5' }
+                { text: 'hhh', link: '/ai/' }
               ]
             }
 
