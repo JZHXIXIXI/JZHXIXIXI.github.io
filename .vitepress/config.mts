@@ -81,7 +81,7 @@ export default defineConfig({
                 { text: 'src学习', link: '/ai/openclaw_src_cli' },
                 { text: 'hhh', link: '/ai/' }
               ]
-            }
+            },
 
             {
               text: '🔽 论文笔记',
