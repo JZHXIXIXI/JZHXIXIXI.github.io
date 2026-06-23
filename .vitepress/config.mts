@@ -68,7 +68,16 @@ export default defineConfig({
               collapsed: false, // 展开里面的三级菜单
               items: [
                 { text: '运算符', link: '/embed/运算符' },
-                { text: '关键字', link: '/embed/关键字' }
+                { text: '关键字', link: '/embed/关键字' },
+                { text: '函数', link: '/embed/函数' },
+                { text: '预处理', link: '/embed/预处理' },
+                { text: '指针和数组', link: '/embed/指针和数组' },
+                { text: '字符串函数', link: '/embed/字符串函数' },
+                { text: '操作系统', link: '/embed/操作系统' },
+                { text: '网络编程', link: '/embed/网络编程' },
+                { text: '内存', link: '/embed/内存' },
+                { text: '通信协议', link: '/embed/通信协议' },
+                { text: '硬件', link: '/embed/硬件' }
               ]
             }
               ]
