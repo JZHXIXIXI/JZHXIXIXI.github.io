@@ -9,22 +9,22 @@ hero:
     # 🌟 把第一个核心大按钮改成你的群论笔记！
     - theme: brand
       text: CTF笔记
-      link: /1
+      link: /ctf/introduce
     - theme: brand
       text: 嵌入式笔记
-      link: /2
+      link: /embed/introduce
     - theme: brand
       text: AI笔记
-      link: /3
+      link: /ai/introduce
 
 features:
   - title: 🚩 1. CTF
-    details: 专注于密码学安全。深入记录群、环、域等代数结构，椭圆曲线加密 (ECC)、国密 SM 系列算法分析以及真题实战总结。
-    link: /1
+    details: 学习网安知识笔记，现在有CTF（PWN）方向题解以及国密算法
+    link: /ctf/introduce
   - title: 🤖 2. 嵌入式
-    details: 聚焦 Linux 系统运维与车载网络安全。记录树莓派硬件调试、CAN 总线逆变、车载入侵检测系统 (IDS) 的开发沉淀。
-    link: /2
+    details: 学习笔记
+    link: /embed/introduce
   - title: 🧠 3. AI
-    details: 探索前沿 AI 协议与端侧部署。包含 ONNX Runtime 模型量化推理、Model Context Protocol (MCP) 以及 AI Agent 攻防对抗。
-    link: /3
+    details: 希望能坚持下去，了解ai，拥抱ai
+    link: /ai/introduce
 ---
