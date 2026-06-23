@@ -34,7 +34,27 @@ export default defineConfig({
             }
 
               ]
+          },
+
+          {
+          text: '📁 加密算法',
+          collapsed: true, 
+          items: [
+            {
+              text: '🔽 国密算法',
+              collapsed: false, // 展开里面的三级菜单
+              items: [
+                { text: 'SM2', link: '/ctf/SM2' },
+                { text: 'SM3', link: '/ctf/SM3' },
+                { text: 'SM4', link: '/ctf/SM4' },
+                { text: 'SM9', link: '/ctf/SM9' },
+                { text: 'ZUC', link: '/ctf/ZUC' }
+              ]
+            }
+
+              ]
           }
+
         ]
       },
       {
@@ -49,8 +69,11 @@ export default defineConfig({
               text: '🔽 Stm32',
               collapsed: false, // 展开里面的三级菜单
               items: [
-                { text: 'GPIO', link: '/embed' },
-                { text: '通信协议', link: '/embed' }
+                { text: 'GPIO', link: '/embed/GPIO' },
+                { text: '通信协议', link: '/embed/Stm32-通信协议' },
+                { text: 'ADC', link: '/embed/ADC通道' },
+                { text: '定时器', link: '/embed/定时器' },
+                { text: '中断', link: '/embed/中断' },
               ]
             },
 
