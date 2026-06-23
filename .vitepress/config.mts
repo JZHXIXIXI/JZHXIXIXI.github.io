@@ -75,7 +75,7 @@ export default defineConfig({
                 { text: '字符串函数', link: '/embed/字符串函数' },
                 { text: '操作系统', link: '/embed/操作系统' },
                 { text: '网络编程', link: '/embed/网络编程' },
-                { text: '内存', link: '/embed/内存' },
+                { text: '内存', link: '/embed/内存篇' },
                 { text: '通信协议', link: '/embed/通信协议' },
                 { text: '硬件', link: '/embed/硬件' }
               ]
