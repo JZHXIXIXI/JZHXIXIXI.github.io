@@ -53,7 +53,22 @@ export default defineConfig({
             }
 
               ]
-          }
+          },
+
+          {
+          text: '📁 复习',
+          collapsed: true, 
+          items: [
+            {
+              text: '🔽 研一下',
+              collapsed: false, // 展开里面的三级菜单
+              items: [
+                { text: '网络安全', link: '/ctf/网络安全复习' }
+              ]
+            }
+
+              ]
+          },
 
         ]
       },
